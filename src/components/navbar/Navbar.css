@@ -148,3 +148,9 @@
     cursor: pointer;
   }
 }
+
+@media (max-width: 450px){
+  .navbar{
+    padding: 0 16px;
+  }
+}

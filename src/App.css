@@ -37,6 +37,6 @@ button {
 
 @media (max-width: 450px) {
   .app-components {
-    padding: 0 7px;
+    padding: 0 8px;
   }
 }
