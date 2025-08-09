@@ -1,0 +1,150 @@
+
+.nav-container {
+  width: 100%;
+  padding-top: 20px;
+  margin-bottom: 80px;
+}
+
+.navbar {
+  position: relative;
+  font-family: Josefin Sans;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+
+.navbar .logo img {
+  width: 25px;
+  height: 40px;
+}
+
+.navbar .logo h1 {
+  font-size: 0.9rem;
+}
+
+.navbar .nav-links {
+  font-size: 1.1rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar .nav-links .link {
+  padding: 5px 20px;
+  cursor: pointer;
+}
+
+.navbar .nav-links .contact {
+  display: none;
+}
+
+.navbar .nav-links .link:hover {
+  background-color: #ff0000;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar .btn {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: #ffffff;
+  color: #ff0000;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar .btn:hover {
+  background-color: #ff0000;
+  color: #ffffff;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media (max-width: 999px) {
+  .navbar .logo img {
+    width: 20px;
+    height: 30px;
+  }
+
+  .navbar .logo h1 {
+    font-size: 0.8rem;
+  }
+
+  .navbar .nav-links {
+    gap: 5px;
+    font-size: 1rem;
+  }
+
+  .navbar .btn {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-container{
+    margin-bottom: 50px;
+  }
+
+  .navbar .nav-links {
+    width: 200px;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    text-align: center;
+    z-index: 100;
+    background-color: rgb(77, 71, 71);
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  .navbar .nav-links li {
+    width: 100%;
+    padding: 3px 0;
+  }
+
+  .navbar .nav-links .contact {
+    display: block;
+    background-color: #ffffff;
+    color: #ff0000;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .navbar .nav-links .contact:hover {
+    background-color: #ff0000;
+    color: #ffffff;
+  }
+
+  .navbar .open {
+    display: flex;
+  }
+
+  .navbar .btn {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}

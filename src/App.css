@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Fleur+De+Leah&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Libertinus+Mono&family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rouge+Script&display=swap");
+
+.app {
+  width: 100%;
+  font-family: Josefin Sans;
+  color: white;
+  background-color: black;
+}
+
+.app-components {
+  width: 100%;
+  height: auto;
+  padding: 0 80px;
+}
+
+@media (max-width: 999px) {
+  .app-components {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .app-components {
+    padding: 0 20px;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+@media (max-width: 450px) {
+  .app-components {
+    padding: 0 7px;
+  }
+}

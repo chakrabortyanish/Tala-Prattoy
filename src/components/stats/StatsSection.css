@@ -1,0 +1,111 @@
+.stats-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  background-color: rgb(26, 26, 26);
+  padding: 30px 100px;
+  margin: 80px 0;
+}
+
+.stats-section .context {
+  width: 100%;
+  max-width: 500px;
+}
+
+.stats-section .context h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.stats-section .context h1 span {
+  color: #f5f5f5;
+  font-weight: 400;
+}
+
+.stats-section .context p {
+  font-size: 0.8rem;
+  color: #adadad;
+  line-height: 15px;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  gap: 50px;
+}
+
+.stats .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 20px;
+  font-size: 0.5rem;
+}
+
+.stats span {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: red;
+  margin-right: 10px;
+}
+
+@media (max-width: 900px) {
+  .stats-section {
+    padding: 20px 50px;
+  }
+
+  .stats-section .context p {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .stats-section {
+    flex-direction: column;
+    text-align: center;
+    margin: 40px 0;
+  }
+
+  .stats-section .context h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+
+  .stats-section .context p {
+    line-height: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .stats-section {
+    padding: 10px;
+  }
+
+  .stats-section .context h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .stats-section .context p {
+    font-size: 0.5rem;
+  }
+
+  .stats {
+    gap: 20px;
+  }
+
+  .stats .text {
+    gap: 10px;
+  }
+
+  .stats span {
+    font-size: 1rem;
+    margin-right: 5px;
+  }
+}

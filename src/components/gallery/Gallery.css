@@ -1,0 +1,98 @@
+.gallery {
+  width: 100%;
+  margin: 80px 0;
+}
+
+.gallery .context {
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.gallery .context h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.gallery .context p {
+  font-size: 0.8rem;
+  color: #e4e4e4;
+  line-height: 20px;
+  margin: 20px 0 50px 0;
+}
+
+.gallery .images {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.grid2, .grid4{
+    flex-direction: row-reverse;
+    transform: rotate(180deg);
+}
+
+.grid1,
+.grid2,
+.grid3,
+.grid4 {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+
+.item1,
+.item4,
+.item5,
+.item8 {
+  flex: 2; 
+}
+
+.item2,
+.item3,
+.item6,
+.item7 {
+  flex: 1; 
+}
+
+.gallery .images img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    margin: 50px 0;
+  }
+
+  .gallery .context h1 {
+    font-size: 2rem;
+  }
+
+  .gallery .images img {
+    min-width: 100px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery .context h1 {
+    font-size: 1.5rem;
+  }
+
+  .gallery .context p {
+    font-size: 0.5rem;
+    line-height: 13px;
+    margin: 10px 0 20px 0;
+  }
+
+  .gallery .images img {
+    min-width: 100px;
+    height: 100px;
+  }
+}
